@@ -47,13 +47,10 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr htmlcov/
 	rm -fr .pytest_cache
 
-lint/flake8: ## check style with flake8
-	flake8 {{ cookiecutter.project_slug }} tests
-
 lint/black: ## check style with black
-	black --check {{ cookiecutter.project_slug }} tests
+	black --check jupyter_cellxgene_gateway_proxy tests
 
-lint: lint/flake8{%- if cookiecutter.use_black == 'y' %} lint/black{%- endif %} ## check style
+lint: lint/black ## check style
 
 test: ## run tests quickly with the default Python
 	pytest
