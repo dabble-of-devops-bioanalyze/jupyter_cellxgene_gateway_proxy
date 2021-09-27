@@ -5,4 +5,3 @@ This package is just a wrapper around (cellxgene)[https://github.com/chanzuckerb
 ```
 pip install jupyter_cellxgene_gateway_proxy
 ```
-

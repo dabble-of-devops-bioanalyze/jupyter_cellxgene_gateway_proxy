@@ -1,6 +1,6 @@
-* FAB CoreUI Theme version:
-* Python version:
-* Operating System:
+- FAB CoreUI Theme version:
+- Python version:
+- Operating System:
 
 ### Description
 
