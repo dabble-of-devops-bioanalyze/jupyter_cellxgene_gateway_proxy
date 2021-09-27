@@ -3,7 +3,7 @@ import versioneer
 
 setuptools.setup(
     name="jupyter_cellxgene_gateway_proxy",
-    url="https://github.com/jupyterhub/jupyter-server-proxy/tree/master/contrib/jupyter_cellxgene_gateway_proxy",
+    url="https://github.com/dabble-of-devops-biodeploy/jupyter_cellxgene_gateway_proxy",
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     author="Jillian Rowe",
