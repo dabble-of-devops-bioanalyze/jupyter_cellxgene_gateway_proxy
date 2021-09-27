@@ -52,6 +52,9 @@ lint/black: ## check style with black
 
 lint: lint/black ## check style
 
+format:
+	black .
+
 test: ## run tests quickly with the default Python
 	pytest
 

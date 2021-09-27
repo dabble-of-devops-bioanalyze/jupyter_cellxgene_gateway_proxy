@@ -22,5 +22,7 @@ setuptools.setup(
             "cellxgene = jupyter_cellxgene_gateway_proxy:setup_jupyter_cellxgene_proxy",
         ]
     },
-    package_data={"jupyter_cellxgene_gateway_proxy": ["icons/*"],},
+    package_data={
+        "jupyter_cellxgene_gateway_proxy": ["icons/*"],
+    },
 )

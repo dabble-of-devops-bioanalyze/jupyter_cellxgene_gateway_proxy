@@ -53,16 +53,19 @@ def setup_jupyter_cellxgene_proxy():
     def _get_cmd(port):
         CELLXGENE_DATA = os.environ.get("CELLXGENE_DATASET", False)
         if not CELLXGENE_DATA:
-            os.environ["CELLXGENE_DATA"] = "https://cellxgene-example-data.czi.technology/pbmc3k.h5ad "
+            os.environ[
+                "CELLXGENE_DATA"
+            ] = "https://cellxgene-example-data.czi.technology/pbmc3k.h5ad "
 
         # cellxgene launch https://cellxgene-example-data.czi.technology/pbmc3k.h5ad --host 0.0.0.0 -d --port 5001
-        cmd = ["cellxgene",
+        cmd = [
+            "cellxgene",
             "launch",
-            "{dataset}".format(dataset=os.environ.get('CELLXGENE_DATA')),
+            "{dataset}".format(dataset=os.environ.get("CELLXGENE_DATA")),
             "--host",
             "0.0.0.0",
             "--port",
-            "{port}"
+            "{port}",
         ]
 
         return cmd
@@ -80,5 +83,7 @@ def setup_jupyter_cellxgene_proxy():
         },
     }
 
+
 from . import _version
-__version__ = _version.get_versions()['version']
+
+__version__ = _version.get_versions()["version"]
