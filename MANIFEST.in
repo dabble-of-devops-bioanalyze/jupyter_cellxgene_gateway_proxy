@@ -1,0 +1,2 @@
+include versioneer.py
+include jupyter_cellxgene_gateway_proxy/_version.py
